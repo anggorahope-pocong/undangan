@@ -109,7 +109,7 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 <div class="cover-frame"><img src="./otodantika1.jpeg" alt="Karnoto & Rohmatikal"></div>
 <div style="animation:fadeUp .8s ease .5s both" class="text-center relative z-10 w-full">
 <p class="text-gld-300/80 text-[13px] tracking-[.4em] uppercase mb-4 font-medium">Undangan Pernikahan</p>
-<h1 class="font-script text-5xl md:text-6xl mb-2 leading-tight" style="color:#f5ead0; pointer-events:auto; cursor:pointer; padding:12px 8px; transition:transform .2s ease, text-shadow .2s ease" id="adminTrigger" onmouseover="this.style.transform='scale(1.02)';this.style.textShadow='0 0 20px rgba(201,169,110,.3)'" onmouseout="this.style.transform='scale(1)';this.style.textShadow='none'"><span id="adminTriggerText">Karnoto & Rohmatikal</span><div id="adminLongPressIndicator" style="height:3px;background:rgba(201,169,110,.5);border-radius:2px;margin-top:8px;overflow:hidden;opacity:0;transition:opacity .2s"><div id="adminLongPressFill" style="height:100%;background:#c9a96e;width:0%;transition:width 0s linear"></div></div></h1>
+<h1 class="font-script text-5xl md:text-6xl mb-2 leading-tight" style="color:#f5ead0">Karnoto & Rohmatikal</h1>
 <p class="font-serif text-gld-300/80 text-base tracking-[.15em] italic font-light mb-6">Isnianti</p>
 <div class="flex items-center justify-center gap-4 mb-8"><div class="w-12 h-px bg-gld-300/40"></div><span class="text-[13px] text-gld-300/70 tracking-wider font-light">Jumat, 25 September 2026</span><div class="w-12 h-px bg-gld-300/40"></div></div>
 </div>
@@ -191,12 +191,7 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 
 <!-- ========== ADMIN: SETUP ========== -->
 <div id="admSetup" class="ap sec-a"><div class="max-w-xl mx-auto">
-<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><button class="btns text-[11px] py-2 px-4" onclick="goHome()"><i class="fas fa-arrow-left"></i></button><div><h2 class="font-serif text-2xl font-light" style="color:#f5ead0">Panel Admin</h2><p class="text-gld-300/60 text-[11px] tracking-wider mt-0.5">Kelola undangan & check-in</p></div></div>
-<!-- Admin Nav Tabs -->
-<div style="display:flex;border-bottom:1px solid rgba(201,169,110,.15);margin-bottom:16px">
-  <button class="admin-nav-tab active" data-page="admSetup" onclick="switchAdminPage('admSetup', this)" style="padding:10px 16px;font-size:12px;font-weight:500;color:rgba(201,169,110,.8);background:0 0;border:none;border-bottom:2px solid #c9a96e;cursor:pointer;font-family:'Inter',sans-serif">Setup</button>
-  <button class="admin-nav-tab" data-page="admCI" onclick="switchAdminPage('admCI', this)" style="padding:10px 16px;font-size:12px;font-weight:500;color:rgba(201,169,110,.4);background:0 0;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:'Inter',sans-serif">Check-in</button>
-</div>
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:24px"><button class="btns text-[11px] py-2 px-4" onclick="goHome()"><i class="fas fa-arrow-left"></i></button><div><h2 class="font-serif text-2xl font-light" style="color:#f5ead0">Panel Setup</h2><p class="text-gld-300/60 text-[11px] tracking-wider mt-0.5">Konfigurasi JSONBin & kelola data</p></div></div>
 <div class="gframe" style="margin-bottom:16px"><div class="p-5"><h3 class="text-gld-300/80 text-[12px] tracking-[.2em] uppercase mb-3 font-medium"><i class="fas fa-plug mr-1.5"></i>Koneksi JSONBin.io</h3>
 <div id="admForm"><p class="text-[12px] font-light mb-3" style="color:rgba(245,240,232,.6);line-height:1.6">Daftar gratis di <a href="https://jsonbin.io" target="_blank" class="underline" style="color:#c9a96e">jsonbin.io</a>, copy API Key.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px"><input type="text" class="fi" id="admKey" placeholder="API Key (X-Master-Key)" style="flex:1;min-width:180px"><button class="btnp text-[11px] py-3 px-5" onclick="admNew()"><i class="fas fa-plus"></i> Buat Baru</button></div><div style="position:relative"><i class="fas fa-link" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:12px;color:rgba(201,169,110,.5)"></i><input type="text" class="fi" id="admBin" placeholder="Atau paste Bin ID..." style="padding-left:38px"></div><button class="btns text-[11px] py-2.5 px-4 mt-2" onclick="admExist()"><i class="fas fa-link"></i> Hubungkan</button></div>
 <div id="admOk" style="display:none"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div class="apu"></div><span class="text-[13px] font-medium" style="color:#6abf69">Terhubung ke Cloud</span></div><div style="font-size:11px;color:rgba(201,169,110,.6);word-break:break-all;background:rgba(26,31,46,.5);padding:8px 12px;border-radius:10px;border:1px solid rgba(201,169,110,.1)">Bin: <span id="admBinId"></span></div><button class="btns text-[11px] py-2 px-4 mt-3" style="color:#d94f4f;border-color:rgba(217,79,79,.3)" onclick="admDisc()"><i class="fas fa-unlink"></i> Putuskan</button></div>
@@ -209,23 +204,7 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 
 <!-- ========== ADMIN: CHECK-IN ========== -->
 <div id="admCI" class="ap sec-b"><div class="max-w-xl mx-auto">
-<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px">
-  <div style="display:flex;align-items:center;gap:10px">
-    <button class="btns text-[11px] py-2 px-4" onclick="goHome()"><i class="fas fa-arrow-left"></i></button>
-    <div>
-      <h2 class="font-serif text-2xl font-light" style="color:#f5ead0">Panel Admin</h2>
-      <p class="text-gld-300/60 text-[11px] tracking-wider mt-0.5">Kelola undangan & check-in</p>
-    </div>
-  </div>
-  <div style="display:flex;gap:6px;align-items:center">
-    <span id="ciSync" style="font-size:10px;color:rgba(201,169,110,.5)"><i class="fas fa-sync-alt"></i></span>
-  </div>
-</div>
-<!-- Admin Nav Tabs -->
-<div style="display:flex;border-bottom:1px solid rgba(201,169,110,.15);margin-bottom:16px">
-  <button class="admin-nav-tab" data-page="admSetup" onclick="switchAdminPage('admSetup', this)" style="padding:10px 16px;font-size:12px;font-weight:500;color:rgba(201,169,110,.4);background:0 0;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:'Inter',sans-serif">Setup</button>
-  <button class="admin-nav-tab active" data-page="admCI" onclick="switchAdminPage('admCI', this)" style="padding:10px 16px;font-size:12px;font-weight:500;color:rgba(201,169,110,.8);background:0 0;border:none;border-bottom:2px solid #c9a96e;cursor:pointer;font-family:'Inter',sans-serif">Check-in</button>
-</div>
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px"><div style="display:flex;align-items:center;gap:8px"><div class="apu"></div><div><h2 class="font-serif text-2xl font-light" style="color:#f5ead0">Check-in Hari H</h2><p class="text-gld-300/60 text-[11px] tracking-wider mt-0.5">Auto-sync 5 detik</p></div></div><div style="display:flex;gap:6px;align-items:center"><span id="ciSync" style="font-size:10px;color:rgba(201,169,110,.5)"><i class="fas fa-sync-alt"></i></span><button class="btns text-[11px] py-2 px-3" onclick="goHome()"><i class="fas fa-sign-out-alt"></i></button></div></div>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px"><div class="as" style="background:rgba(201,169,110,.05)"><div class="n" style="color:#e8d5a8" id="csT">0</div><div class="l">Total RSVP</div></div><div class="as" style="background:rgba(106,191,105,.05)"><div class="n" style="color:#6abf69" id="csH">0</div><div class="l">Sudah Hadir</div></div><div class="as" style="background:rgba(217,79,79,.05)"><div class="n" style="color:#d94f4f" id="csB">0</div><div class="l">Belum Hadir</div></div></div>
 <div class="gframe" style="padding:12px 16px;margin-bottom:14px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><span class="text-[11px] font-medium" style="color:rgba(201,169,110,.7)">Progress</span><span class="text-[11px] font-medium" style="color:#e8d5a8" id="csPct">0%</span></div><div class="apb"><div class="f" id="csFill" style="width:0%"></div></div><span class="text-[10px]" style="color:rgba(201,169,110,.5)" id="csDet">0 dari 0</span></div>
 <div style="display:flex;gap:5px;margin-bottom:10px;flex-wrap:wrap"><button class="cfb text-[11px] py-2 px-3 rounded-full border font-medium cursor-pointer" data-f="all" onclick="ciF('all',this)" style="background:rgba(201,169,110,.08);color:#e8d5a8;border-color:rgba(201,169,110,.25)">Semua</button><button class="cfb text-[11px] py-2 px-3 rounded-full border font-medium cursor-pointer" data-f="hadir" onclick="ciF('hadir',this)" style="background:rgba(106,191,105,.06);color:#6abf69;border-color:rgba(106,191,105,.2)">Hadir</button><button class="cfb text-[11px] py-2 px-3 rounded-full border font-medium cursor-pointer" data-f="belum" onclick="ciF('belum',this)" style="background:rgba(217,79,79,.06);color:#d94f4f;border-color:rgba(217,79,79,.2)">Belum</button></div>
@@ -238,58 +217,12 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 <a href="https://wa.me/6281234567890" target="_blank" class="waf" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 <button class="mbtn" id="mBtn" onclick="toggleM()"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></button>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8d5a8" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg></button>
-<button id="adminFloatingBtn" onclick="showPW('admSetup')" style="position:fixed;bottom:80px;right:16px;width:40px;height:40px;border-radius:50%;background:rgba(201,169,110,.2);border:1px solid rgba(201,169,110,.3);color:#e8d5a8;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:40;font-size:14px;transition:all .2s" title="Admin Panel" onmouseover="this.style.background='rgba(201,169,110,.35)';this.style.borderColor='rgba(201,169,110,.6)';this.style.transform='scale(1.05)'" onmouseout="this.style.background='rgba(201,169,110,.2)';this.style.borderColor='rgba(201,169,110,.3)';this.style.transform='scale(1)'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='scale(1.05)'"><i class="fas fa-cog"></i></button>
 
 <script>
 const $=id=>document.getElementById(id);
 const ADMIN_PW='admin_undangan', JB_API='https://api.jsonbin.io/v3';
 let jbCfg={key:'',binId:''}, jbData={rsvps:[],wishes:[]};
 let wishPage=0, ciFilter='all', pollT=null, toastT=null, mPlay=false, pendingPage=null;
-let pressTimer=null;
-
-// Long press untuk akses admin
-const adminTrigger=$('adminTrigger');
-const longPressIndicator=$('adminLongPressIndicator');
-const longPressFill=$('adminLongPressFill');
-let longPressAnimFrame=null;
-let longPressStartTime=0;
-if(adminTrigger){
-  adminTrigger.addEventListener('mousedown', startPress);
-  adminTrigger.addEventListener('mouseup', cancelPress);
-  adminTrigger.addEventListener('mouseleave', cancelPress);
-  adminTrigger.addEventListener('touchstart', startPress, {passive:true});
-  adminTrigger.addEventListener('touchend', cancelPress);
-  adminTrigger.addEventListener('touchcancel', cancelPress);
-}
-function startPress(){ 
-  longPressStartTime=Date.now();
-  if(longPressIndicator) longPressIndicator.style.opacity='1';
-  if(longPressFill) longPressFill.style.width='0%';
-  if(longPressFill) longPressFill.style.transition='width 0s linear';
-  
-  // Animation for the progress bar
-  function animateProgress(){
-    const elapsed=Date.now()-longPressStartTime;
-    const progress=Math.min(elapsed/1500,1)*100;
-    if(longPressFill) longPressFill.style.width=`${progress}%`;
-    if(progress<100 && pressTimer){
-      longPressAnimFrame=requestAnimationFrame(animateProgress);
-    }
-  }
-  longPressAnimFrame=requestAnimationFrame(animateProgress);
-  
-  pressTimer=setTimeout(()=>{
-    cancelPress();
-    showPW('admSetup');
-  }, 1500); 
-}
-function cancelPress(){ 
-  if(pressTimer){ clearTimeout(pressTimer); pressTimer=null; }
-  if(longPressAnimFrame){ cancelAnimationFrame(longPressAnimFrame); longPressAnimFrame=null; }
-  if(longPressIndicator) longPressIndicator.style.opacity='0';
-  if(longPressFill) longPressFill.style.width='0%';
-}
-
 
 function escH(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
 function ini(n){return n.split(' ').map(x=>x[0]).join('').toUpperCase().slice(0,2)}
@@ -388,38 +321,6 @@ function checkPW(){
  $('pwModal').addEventListener('click',function(e){if(e.target===this)closePW()});
 
 /* ===== NAVIGASI ===== */
-function switchAdminPage(page, btn){
-  stopPoll();
-  // Update nav tab styles
-  document.querySelectorAll('.admin-nav-tab').forEach(tab => {
-    tab.classList.remove('active');
-    tab.style.color='rgba(201,169,110,.4)';
-    tab.style.borderBottomColor='transparent';
-  });
-  if(btn){
-    btn.classList.add('active');
-    btn.style.color='rgba(201,169,110,.8)';
-    btn.style.borderBottomColor='#c9a96e';
-  } else {
-    // If no btn (called from goAdmin), find and activate the correct tab
-    const activeTab = document.querySelector(`.admin-nav-tab[data-page="${page}"]`);
-    if(activeTab){
-      activeTab.classList.add('active');
-      activeTab.style.color='rgba(201,169,110,.8)';
-      activeTab.style.borderBottomColor='#c9a96e';
-    }
-  }
-  // Sembunyikan semua admin
-  const allPages=['admSetup','admCI'];
-  allPages.forEach(id=>{const el=$(id);if(el)el.classList.remove('on');});
-  // Tampilkan yang diminta
-  const el=$(page);
-  if(!el){toast('Halaman tidak ditemukan');goHome();return;}
-  el.classList.add('on');
-  if(page==='admSetup') admInit();
-  if(page==='admCI') ciStart();
-}
-
 function goHome(){
   stopPoll();
   // Sembunyikan semua halaman admin
@@ -434,7 +335,15 @@ function goAdmin(page){
   stopPoll();
   // Sembunyikan undangan
   $('mc').style.display='none';
-  switchAdminPage(page, null);
+  // Sembunyikan semua admin
+  const pages=['admSetup','admCI'];
+  pages.forEach(id=>{const el=$(id);if(el)el.classList.remove('on')});
+  // Tampilkan yang diminta + NULL CHECK
+  const el=$(page);
+  if(!el){toast('Halaman tidak ditemukan');goHome();return}
+  el.classList.add('on');
+  if(page==='admSetup') admInit();
+  if(page==='admCI') ciStart();
 }
 
 /* ===== ADMIN: SETUP ===== */
