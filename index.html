@@ -29,7 +29,15 @@
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
-        body{font-family:'Inter',sans-serif;background:#0b0f1a;color:rgba(245,240,232,.85);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+        body{font-family:'Inter',sans-serif;background:#0b0f1a;color:rgba(245,240,232,.85);overflow-x:hidden;-webkit-font-smoothing:antialiased;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+        
+        /* Proteksi Gambar (Anti Drag & Klik Kanan) */
+        img { -webkit-user-drag: none; pointer-events: none; }
+        /* Kecuali gambar di Lightbox agar bisa diatur */
+        #lbI { pointer-events: none; }
+        /* Form Input tetap bisa dipilih */
+        input, textarea { -webkit-user-select: text; -moz-user-select: text; -ms-user-select: text; user-select: text; }
+
         ::-webkit-scrollbar{width:3px}
         ::-webkit-scrollbar-thumb{background:rgba(201,169,110,.3);border-radius:10px}
         ::selection{background:rgba(201,169,110,.3);color:#f5ead0}
@@ -58,7 +66,7 @@
         .cover-frame {
             position: relative;
             width: 100%;
-            max-width: 300px; /* Lebar maksimal di HP */
+            max-width: 300px;
             margin: 0 auto 24px;
             border-radius: 20px;
             overflow: hidden;
@@ -69,14 +77,13 @@
         }
         .cover-frame img {
             width: 100%;
-            height: auto; /* Ikut rasio asli gambar */
-            max-height: 55vh; /* Batasi tinggi maksimal agar tombol kelihatan */
+            height: auto; 
+            max-height: 55vh; 
             object-fit: cover; 
-            object-position: center 20%; /* Fokus ke bagian atas (wajah) */
+            object-position: center 20%; 
             display: block;
             transition: transform 5s ease;
         }
-        .cover-frame:hover img { transform: scale(1.05); }
 
         .star{position:absolute;width:2px;height:2px;background:#c9a96e;border-radius:50%}
         .star:nth-child(1){top:12%;left:15%;animation:twinkle 3s ease-in-out infinite}
@@ -212,7 +219,7 @@
 
 <div id="lb" class="lb" onclick="closeLB()">
     <button class="lb-x" onclick="closeLB()" aria-label="Tutup"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-    <img id="lbI" src="" alt="Galeri">
+    <img id="lbI" src="" alt="Galeri" draggable="false">
 </div>
 
 <!-- ============ OPENING ============ -->
@@ -221,7 +228,7 @@
     
     <!-- Foto Pre-wedding Utama -->
     <div class="cover-frame">
-        <img src="./otodantika1.jpeg" alt="Karnoto & Rohmatikal">
+        <img src="./otodantika1.jpeg" alt="Karnoto & Rohmatikal" draggable="false">
     </div>
 
     <div style="animation:fadeUp .8s ease .5s both" class="text-center relative z-10 w-full">
@@ -256,9 +263,9 @@
             <div class="dvd rv"><div class="ln"></div><div class="diamond"></div><div class="ln"></div></div>
             <div class="text-center mb-10 rv"><p class="text-gld-300/80 text-[12px] tracking-[.3em] uppercase mb-1.5 font-medium">Kehormatan bagi kami</p><p class="text-gld-300/70 text-[13px] tracking-wider font-light">mengundang Bapak/Ibu/Saudara/i di tempat</p></div>
             <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 mb-16">
-                <div class="rv" style="transition-delay:.1s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(-3deg)"><img src="./oto.png" alt="Karnoto" loading="eager" fetchpriority="high"><div class="clbl"><p class="text-gld-300/80 text-[12px] tracking-[.25em] uppercase mb-1">Mempelai Pria</p><h3 class="font-script text-3xl" style="color:#f5ead0">Karnoto</h3></div></div></div>
+                <div class="rv" style="transition-delay:.1s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(-3deg)"><img src="./oto.png" alt="Karnoto" loading="eager" fetchpriority="high" draggable="false"><div class="clbl"><p class="text-gld-300/80 text-[12px] tracking-[.25em] uppercase mb-1">Mempelai Pria</p><h3 class="font-script text-3xl" style="color:#f5ead0">Karnoto</h3></div></div></div>
                 <div class="rv flex-shrink-0 -mt-8 md:mt-0" style="transition-delay:.15s"><div class="w-20 h-20 rounded-full flex items-center justify-center border border-gld-300/40" style="background:rgba(26,31,46,.8)"><span class="gold-txt font-serif text-3xl font-medium">&amp;</span></div></div>
-                <div class="rv" style="transition-delay:.2s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(3deg)"><img src="./tika.png" alt="Rohmatikal Isnianti" loading="eager" fetchpriority="high"><div class="clbl"><p class="text-gld-300/80 text-[12px] tracking-[.25em] uppercase mb-1">Mempelai Wanita</p><h3 class="font-script text-3xl" style="color:#f5ead0">Rohmatikal</h3><p class="font-serif text-gld-300/80 text-base italic">Isnianti</p></div></div></div>
+                <div class="rv" style="transition-delay:.2s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(3deg)"><img src="./tika.png" alt="Rohmatikal Isnianti" loading="eager" fetchpriority="high" draggable="false"><div class="clbl"><p class="text-gld-300/80 text-[12px] tracking-[.25em] uppercase mb-1">Mempelai Wanita</p><h3 class="font-script text-3xl" style="color:#f5ead0">Rohmatikal</h3><p class="font-serif text-gld-300/80 text-base italic">Isnianti</p></div></div></div>
             </div>
             <div class="text-center rv" style="transition-delay:.3s">
                 <h2 class="font-script text-[3.5rem] md:text-[6.5rem] leading-[.9]" style="color:#f5ead0">Karnoto</h2>
@@ -289,7 +296,7 @@
             <div class="text-center mb-16 rv"><p class="text-gld-300/80 text-[12px] tracking-[.4em] uppercase mb-4 font-medium">Insya Allah</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">Mempelai</h2><div class="gline w-12 mx-auto mt-6"></div></div>
             <div class="grid md:grid-cols-2 gap-16">
                 <div class="text-center rv" style="transition-delay:.1s">
-                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/40 shadow-lg shadow-black/20"><img src="./oto.png" alt="Karnoto" class="w-full h-full object-cover" loading="lazy"></div>
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/40 shadow-lg shadow-black/20"><img src="./oto.png" alt="Karnoto" class="w-full h-full object-cover" loading="lazy" draggable="false"></div>
                     <p class="text-gld-300/80 text-[12px] tracking-[.25em] uppercase mb-2 font-medium">Mempelai Pria</p>
                     <h3 class="font-script text-5xl mb-4" style="color:#f5ead0">Karnoto</h3>
                     <div class="gline w-8 mx-auto mb-4"></div>
@@ -297,7 +304,7 @@
                     <div class="addr mt-5 text-left"><div class="flex items-start gap-2.5"><svg class="si text-gld-300/80 mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p class="text-[13px] font-light leading-relaxed" style="color:rgba(245,240,232,.7)">Asemdoyong, RT 48 / RW 10, Taman, Pemalang</p></div></div>
                 </div>
                 <div class="text-center rv" style="transition-delay:.2s">
-                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/40 shadow-lg shadow-black/20"><img src="./tika.png" alt="Rohmatikal Isnianti" class="w-full h-full object-cover" loading="lazy"></div>
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/40 shadow-lg shadow-black/20"><img src="./tika.png" alt="Rohmatikal Isnianti" class="w-full h-full object-cover" loading="lazy" draggable="false"></div>
                     <p class="text-gld-300/80 text-[12px] tracking-[.25em] uppercase mb-2 font-medium">Mempelai Wanita</p>
                     <h3 class="font-script text-5xl mb-1" style="color:#f5ead0">Rohmatikal</h3>
                     <p class="font-serif text-gld-300/80 text-lg italic mb-4 font-light">Isnianti</p>
@@ -314,10 +321,10 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-14 rv"><p class="text-gld-300/80 text-[12px] tracking-[.4em] uppercase mb-4 font-medium">Galeri</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">Momen Bahagia</h2><div class="gline w-12 mx-auto mt-6"></div></div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
-                <div class="gcard aspect-[3/4] rv" style="transform:rotate(-1.5deg);transition-delay:.05s" onclick="openLB('./otodantika1.jpeg')"><img src="./otodantika1.jpeg" alt="Pre-wedding 1" loading="lazy"></div>
-                <div class="gcard aspect-[3/4] md:row-span-2 rv" style="transform:rotate(1deg);transition-delay:.1s" onclick="openLB('./otodantika2.jpeg')"><img src="./otodantika2.jpeg" alt="Pre-wedding 2" loading="lazy"></div>
-                <div class="gcard aspect-[3/4] rv" style="transform:rotate(-.7deg);transition-delay:.15s" onclick="openLB('./otodantika4.jpeg')"><img src="./otodantika4.jpeg" alt="Pre-wedding 3" loading="lazy"></div>
-                <div class="gcard aspect-[3/4] rv" style="transform:rotate(.7deg);transition-delay:.2s" onclick="openLB('./otodantika3.png')"><img src="./otodantika3.png" alt="Pre-wedding 4" loading="lazy"></div>
+                <div class="gcard aspect-[3/4] rv" style="transform:rotate(-1.5deg);transition-delay:.05s" onclick="openLB('./otodantika1.jpeg')"><img src="./otodantika1.jpeg" alt="Pre-wedding 1" loading="lazy" draggable="false"></div>
+                <div class="gcard aspect-[3/4] md:row-span-2 rv" style="transform:rotate(1deg);transition-delay:.1s" onclick="openLB('./otodantika2.jpeg')"><img src="./otodantika2.jpeg" alt="Pre-wedding 2" loading="lazy" draggable="false"></div>
+                <div class="gcard aspect-[3/4] rv" style="transform:rotate(-.7deg);transition-delay:.15s" onclick="openLB('./otodantika4.jpeg')"><img src="./otodantika4.jpeg" alt="Pre-wedding 3" loading="lazy" draggable="false"></div>
+                <div class="gcard aspect-[3/4] rv" style="transform:rotate(.7deg);transition-delay:.2s" onclick="openLB('./otodantika3.png')"><img src="./otodantika3.png" alt="Pre-wedding 4" loading="lazy" draggable="false"></div>
             </div>
         </div>
     </section>
@@ -430,12 +437,51 @@
 <script>
 /*
  * =============================================
+ *  PROTEKSI KONTEN (Anti Copy, Save, Drag, Inspect)
+ * =============================================
+ */
+// 1. Blokir Klik Kanan (Context Menu)
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+// 2. Blokir Seleksi Teks & Drag Gambar
+document.addEventListener('selectstart', function(e) {
+    // Kecuali input dan textarea agar form RSVP tetap bisa diisi
+    if(!(e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+        e.preventDefault();
+    }
+});
+document.addEventListener('dragstart', function(e) {
+    e.preventDefault();
+});
+
+// 3. Blokir Shortcut Keyboard (Ctrl+S, Ctrl+C, Ctrl+U, F12, Ctrl+Shift+I/J/C)
+document.addEventListener('keydown', function(e) {
+    // Cek apakah sedang mengetik di form
+    var isTyping = e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA';
+    
+    if (!isTyping) {
+        // Blokir Ctrl+C (Copy) jika bukan di form
+        if (e.ctrlKey && e.key === 'c') { e.preventDefault(); }
+    }
+    
+    // Blokir Save (Ctrl+S), View Source (Ctrl+U), Print (Ctrl+P)
+    if (e.ctrlKey && (e.key === 's' || e.key === 'u' || e.key === 'p')) {
+        e.preventDefault();
+    }
+    
+    // Blokir Developer Tools (F12, Ctrl+Shift+I/J/C)
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C'))) {
+        e.preventDefault();
+    }
+});
+
+
+/*
+ * =============================================
  *  KONFIGURASI JSONBIN.IO
  * =============================================
- *  1. Daftar di https://jsonbin.io
- *  2. Buat bin baru dengan: {"wishes":[]}
- *  3. Salin BIN_ID dan API_KEY
- *  4. Paste di bawah ini
  */
 const BIN_ID  = '6a52d324f5f4af5e29826a0a';
 const API_KEY = '$2a$10$oYVjz0gl7wChrAj0NzegdOrgpZViN5Uz1esV0LTK5dKML.aA0YIy.';
