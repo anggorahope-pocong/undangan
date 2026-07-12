@@ -47,9 +47,9 @@
         .rv.vis{opacity:1;transform:translateY(0)}
 
         .gold-txt{background:linear-gradient(90deg,#8a703a,#c9a96e,#e8d5a8,#c9a96e,#8a703a);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5s linear infinite}
-        .gline{height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,110,.35),transparent)}
-        .gframe{border:1px solid rgba(201,169,110,.2);border-radius:20px;position:relative}
-        .gframe::before{content:'';position:absolute;inset:6px;border:1px solid rgba(201,169,110,.08);border-radius:16px;pointer-events:none}
+        .gline{height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,110,.6),transparent)}
+        .gframe{border:1px solid rgba(201,169,110,.3);border-radius:20px;position:relative}
+        .gframe::before{content:'';position:absolute;inset:6px;border:1px solid rgba(201,169,110,.15);border-radius:16px;pointer-events:none}
 
         .opening{position:fixed;inset:0;z-index:100;background:#0b0f1a;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s ease,transform 1s ease;padding:20px;overflow:hidden}
         .opening::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(201,169,110,.06) 0%,transparent 60%);pointer-events:none}
@@ -64,7 +64,7 @@
         .star:nth-child(6){top:85%;left:35%;animation:twinkle 3s ease-in-out 2.5s infinite}
 
         .pcard{position:relative;overflow:hidden;border-radius:20px;box-shadow:0 20px 50px -15px rgba(0,0,0,.5);transition:transform .5s ease}
-        .pcard::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,15,26,.7) 0%,transparent 55%);pointer-events:none;border-radius:20px}
+        .pcard::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,15,26,.8) 0%,transparent 55%);pointer-events:none;border-radius:20px}
         .pcard:hover{transform:translateY(-6px) rotate(0deg)!important}
         .pcard img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
         .pcard:hover img{transform:scale(1.04)}
@@ -77,46 +77,46 @@
 
         .dvd{display:flex;align-items:center;justify-content:center;gap:14px;padding:32px 0}
         .dvd .ln{width:70px;height:1px}
-        .dvd .ln:first-child{background:linear-gradient(90deg,transparent,rgba(201,169,110,.35))}
-        .dvd .ln:last-child{background:linear-gradient(90deg,rgba(201,169,110,.35),transparent)}
+        .dvd .ln:first-child{background:linear-gradient(90deg,transparent,rgba(201,169,110,.6))}
+        .dvd .ln:last-child{background:linear-gradient(90deg,rgba(201,169,110,.6),transparent)}
 
-        .cbox{text-align:center;padding:16px 12px;min-width:72px;background:rgba(26,31,46,.8);border-radius:18px;border:1px solid rgba(201,169,110,.15);transition:transform .2s ease}
+        .cbox{text-align:center;padding:16px 12px;min-width:72px;background:rgba(26,31,46,.8);border-radius:18px;border:1px solid rgba(201,169,110,.25);transition:transform .2s ease}
         .cbox:active{transform:scale(.96)}
         .cnum{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:500;line-height:1;color:#e8d5a8}
-        .clab{font-size:.55rem;text-transform:uppercase;letter-spacing:.18em;color:rgba(201,169,110,.5);margin-top:6px;font-weight:500}
+        .clab{font-size:.55rem;text-transform:uppercase;letter-spacing:.18em;color:rgba(201,169,110,.8);margin-top:6px;font-weight:500}
 
-        .ecard{background:rgba(26,31,46,.6);border:1px solid rgba(201,169,110,.12);border-radius:24px;padding:36px 28px;transition:transform .4s ease,border-color .4s ease}
-        .ecard:hover{transform:translateY(-4px);border-color:rgba(201,169,110,.25)}
+        .ecard{background:rgba(26,31,46,.6);border:1px solid rgba(201,169,110,.2);border-radius:24px;padding:36px 28px;transition:transform .4s ease,border-color .4s ease}
+        .ecard:hover{transform:translateY(-4px);border-color:rgba(201,169,110,.4)}
 
-        .mwrap{border-radius:20px;overflow:hidden;border:1px solid rgba(201,169,110,.15);box-shadow:0 8px 24px -8px rgba(0,0,0,.3)}
+        .mwrap{border-radius:20px;overflow:hidden;border:1px solid rgba(201,169,110,.3);box-shadow:0 8px 24px -8px rgba(0,0,0,.3)}
 
         .btnp{display:inline-flex;align-items:center;gap:10px;padding:16px 40px;background:linear-gradient(135deg,#c9a96e,#a08548);color:#0b0f1a;border:none;border-radius:100px;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease;box-shadow:0 8px 24px -6px rgba(201,169,110,.3);text-decoration:none}
         .btnp:hover{transform:translateY(-2px);box-shadow:0 12px 32px -6px rgba(201,169,110,.4)}
         .btnp:active{transform:translateY(0)}
         .btnp:disabled{opacity:.5;cursor:not-allowed;transform:none!important}
 
-        .btns{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:transparent;color:#c9a96e;border:1px solid rgba(201,169,110,.3);border-radius:100px;font-family:'Inter',sans-serif;font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s ease;text-decoration:none}
-        .btns:hover{background:rgba(201,169,110,.08);border-color:rgba(201,169,110,.5)}
+        .btns{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:transparent;color:#e8d5a8;border:1px solid rgba(201,169,110,.5);border-radius:100px;font-family:'Inter',sans-serif;font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s ease;text-decoration:none}
+        .btns:hover{background:rgba(201,169,110,.1);border-color:rgba(201,169,110,.8)}
 
-        .fi{width:100%;padding:14px 18px;border:1px solid rgba(201,169,110,.15);border-radius:14px;font-family:'Inter',sans-serif;font-size:.88rem;color:rgba(245,240,232,.85);background:rgba(26,31,46,.5);transition:border-color .2s ease;outline:none;-webkit-appearance:none}
-        .fi:focus{border-color:rgba(201,169,110,.4)}
-        .fi::placeholder{color:rgba(245,240,232,.25)}
+        .fi{width:100%;padding:14px 18px;border:1px solid rgba(201,169,110,.3);border-radius:14px;font-family:'Inter',sans-serif;font-size:.88rem;color:rgba(245,240,232,.9);background:rgba(26,31,46,.5);transition:border-color .2s ease;outline:none;-webkit-appearance:none}
+        .fi:focus{border-color:rgba(201,169,110,.7)}
+        .fi::placeholder{color:rgba(245,240,232,.4)}
         .fi.err{border-color:#d44;animation:shake .4s ease}
-        select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23c9a96e' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
+        select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23e8d5a8' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
 
-        .bcard{position:relative;border-radius:20px;padding:30px 24px;background:linear-gradient(145deg,#0d1220,#151a27 50%,#1a1f2e);color:#e8d5a8;border:1px solid rgba(201,169,110,.15);box-shadow:0 12px 40px -10px rgba(0,0,0,.4);min-height:190px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .4s ease}
-        .bcard:hover{transform:translateY(-6px);border-color:rgba(201,169,110,.3)}
+        .bcard{position:relative;border-radius:20px;padding:30px 24px;background:linear-gradient(145deg,#0d1220,#151a27 50%,#1a1f2e);color:#e8d5a8;border:1px solid rgba(201,169,110,.3);box-shadow:0 12px 40px -10px rgba(0,0,0,.4);min-height:190px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .4s ease}
+        .bcard:hover{transform:translateY(-6px);border-color:rgba(201,169,110,.5)}
         .bcard .chip{width:38px;height:28px;border-radius:6px;background:linear-gradient(145deg,#c9a96e,#a08548);box-shadow:0 1px 4px rgba(0,0,0,.3);flex-shrink:0}
-        .bcard .rek{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;letter-spacing:.14em;word-break:break-all;color:#e8d5a8}
-        .bcard .cl{font-size:.5rem;text-transform:uppercase;letter-spacing:.18em;color:rgba(201,169,110,.5)}
-        .bcard .cn{font-size:.8rem;font-weight:300;letter-spacing:.08em;color:rgba(232,213,168,.7)}
+        .bcard .rek{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;letter-spacing:.14em;word-break:break-all;color:#f5ead0}
+        .bcard .cl{font-size:.5rem;text-transform:uppercase;letter-spacing:.18em;color:rgba(201,169,110,.8)}
+        .bcard .cn{font-size:.8rem;font-weight:300;letter-spacing:.08em;color:rgba(232,213,168,.9)}
 
-        .toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(60px);background:rgba(26,31,46,.95);border:1px solid rgba(201,169,110,.2);color:#e8d5a8;padding:12px 28px;border-radius:100px;font-size:.75rem;z-index:200;opacity:0;transition:all .4s ease;box-shadow:0 8px 24px -6px rgba(0,0,0,.4);white-space:nowrap;max-width:88vw;text-align:center;pointer-events:none}
+        .toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(60px);background:rgba(26,31,46,.95);border:1px solid rgba(201,169,110,.3);color:#f5ead0;padding:12px 28px;border-radius:100px;font-size:.75rem;z-index:200;opacity:0;transition:all .4s ease;box-shadow:0 8px 24px -6px rgba(0,0,0,.4);white-space:nowrap;max-width:88vw;text-align:center;pointer-events:none}
         .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
-        .mbtn{position:fixed;bottom:24px;right:24px;width:48px;height:48px;border-radius:50%;background:rgba(26,31,46,.9);border:1px solid rgba(201,169,110,.2);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:90;transition:transform .2s ease;box-shadow:0 4px 16px -4px rgba(0,0,0,.3)}
+        .mbtn{position:fixed;bottom:24px;right:24px;width:48px;height:48px;border-radius:50%;background:rgba(26,31,46,.9);border:1px solid rgba(201,169,110,.3);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:90;transition:transform .2s ease;box-shadow:0 4px 16px -4px rgba(0,0,0,.3)}
         .mbtn:active{transform:scale(.92)}
-        .mbtn .bar{width:2.5px;height:8px;background:#c9a96e;border-radius:2px;margin:0 1.5px}
+        .mbtn .bar{width:2.5px;height:8px;background:#e8d5a8;border-radius:2px;margin:0 1.5px}
         .mbtn.on .bar:nth-child(1){animation:mb .45s ease-in-out infinite alternate}
         .mbtn.on .bar:nth-child(2){animation:mb .45s ease-in-out .08s infinite alternate}
         .mbtn.on .bar:nth-child(3){animation:mb .45s ease-in-out .2s infinite alternate}
@@ -127,39 +127,39 @@
         .waf::before{content:'';position:absolute;inset:-3px;border-radius:50%;border:2px solid rgba(37,211,102,.25);animation:pulseD 2s ease-in-out infinite}
         .ndot{position:absolute;top:-2px;right:-2px;width:12px;height:12px;background:#25D366;border-radius:50%;border:2px solid #0b0f1a}
 
-        .btt{position:fixed;bottom:84px;right:24px;width:40px;height:40px;border-radius:50%;background:rgba(26,31,46,.9);border:1px solid rgba(201,169,110,.15);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:89;box-shadow:0 4px 12px -4px rgba(0,0,0,.3);opacity:0;transform:translateY(16px);pointer-events:none;transition:all .3s ease}
+        .btt{position:fixed;bottom:84px;right:24px;width:40px;height:40px;border-radius:50%;background:rgba(26,31,46,.9);border:1px solid rgba(201,169,110,.3);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:89;box-shadow:0 4px 12px -4px rgba(0,0,0,.3);opacity:0;transform:translateY(16px);pointer-events:none;transition:all .3s ease}
         .btt.show{opacity:1;transform:translateY(0);pointer-events:auto}
 
-        .mcr{position:fixed;bottom:80px;right:12px;z-index:90;font-size:7px;color:rgba(201,169,110,.35);text-align:right;line-height:1.4;opacity:0;transition:opacity .4s ease;pointer-events:none}
+        .mcr{position:fixed;bottom:80px;right:12px;z-index:90;font-size:7px;color:rgba(201,169,110,.7);text-align:right;line-height:1.4;opacity:0;transition:opacity .4s ease;pointer-events:none}
         .mcr.on{opacity:1}
 
-        .addr{background:rgba(26,31,46,.5);border-radius:12px;padding:12px 16px;margin-top:12px;border-left:3px solid rgba(201,169,110,.25)}
+        .addr{background:rgba(26,31,46,.5);border-radius:12px;padding:12px 16px;margin-top:12px;border-left:3px solid rgba(201,169,110,.5)}
 
-        .wcard{background:rgba(26,31,46,.4);border:1px solid rgba(201,169,110,.08);border-radius:16px;padding:20px}
+        .wcard{background:rgba(26,31,46,.4);border:1px solid rgba(201,169,110,.15);border-radius:16px;padding:20px}
         .wcard-enter{animation:fadeUp .5s ease both}
 
         /* Skeleton */
         .skel{border-radius:16px;padding:20px}
-        .skel-row{height:14px;border-radius:8px;background:rgba(201,169,110,.08);animation:pulseSk 1.5s ease-in-out infinite}
+        .skel-row{height:14px;border-radius:8px;background:rgba(201,169,110,.15);animation:pulseSk 1.5s ease-in-out infinite}
         .skel-row.w60{width:60%}.skel-row.w40{width:40%}.skel-row.w80{width:80%}.skel-row.h10{height:10px}
-        .skel-circle{width:40px;height:40px;border-radius:50%;background:rgba(201,169,110,.08);animation:pulseSk 1.5s ease-in-out infinite;flex-shrink:0}
+        .skel-circle{width:40px;height:40px;border-radius:50%;background:rgba(201,169,110,.15);animation:pulseSk 1.5s ease-in-out infinite;flex-shrink:0}
 
         /* Load more button */
-        .loadmore{display:block;width:100%;padding:14px;border:1px dashed rgba(201,169,110,.15);border-radius:16px;background:transparent;color:rgba(201,169,110,.4);font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:all .3s ease;text-align:center;margin-top:16px}
-        .loadmore:hover{border-color:rgba(201,169,110,.3);color:rgba(201,169,110,.6);background:rgba(201,169,110,.03)}
+        .loadmore{display:block;width:100%;padding:14px;border:1px dashed rgba(201,169,110,.3);border-radius:16px;background:transparent;color:rgba(201,169,110,.7);font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:all .3s ease;text-align:center;margin-top:16px}
+        .loadmore:hover{border-color:rgba(201,169,110,.5);color:rgba(201,169,110,.9);background:rgba(201,169,110,.05)}
         .loadmore:active{transform:scale(.98)}
         .loadmore:disabled{opacity:.3;cursor:not-allowed;pointer-events:none}
 
         /* Progress bar */
         .wprogress{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:12px}
-        .wprogress-bar{flex:1;max-width:160px;height:2px;background:rgba(201,169,110,.1);border-radius:2px;overflow:hidden}
-        .wprogress-fill{height:100%;background:rgba(201,169,110,.3);border-radius:2px;transition:width .5s ease}
-        .wprogress-text{font-size:.65rem;color:rgba(201,169,110,.25);letter-spacing:.08em;white-space:nowrap}
+        .wprogress-bar{flex:1;max-width:160px;height:2px;background:rgba(201,169,110,.2);border-radius:2px;overflow:hidden}
+        .wprogress-fill{height:100%;background:rgba(201,169,110,.5);border-radius:2px;transition:width .5s ease}
+        .wprogress-text{font-size:.65rem;color:rgba(201,169,110,.6);letter-spacing:.08em;white-space:nowrap}
 
         .lb{position:fixed;inset:0;z-index:150;background:rgba(0,0,0,.95);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease;padding:16px}
         .lb.open{opacity:1;pointer-events:auto}
         .lb img{max-width:92vw;max-height:85vh;object-fit:contain;border-radius:12px}
-        .lb-x{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#e8d5a8}
+        .lb-x{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#f5ead0}
 
         .arrw{display:inline-block;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid currentColor;animation:bounceA 1.5s ease-in-out infinite}
         .si{display:inline-block;vertical-align:middle;flex-shrink:0}
@@ -197,26 +197,26 @@
 <!-- ============ OPENING ============ -->
 <div id="opn" class="opening" role="dialog" aria-label="Pembuka Undangan">
     <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
-    <svg class="absolute top-6 left-6 opacity-20" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
-    <svg class="absolute top-6 right-6 opacity-20" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="transform:scaleX(-1)"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
-    <svg class="absolute bottom-6 left-6 opacity-20" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="transform:scaleY(-1)"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
-    <svg class="absolute bottom-6 right-6 opacity-20" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="transform:scale(-1)"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
+    <svg class="absolute top-6 left-6 opacity-40" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
+    <svg class="absolute top-6 right-6 opacity-40" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="transform:scaleX(-1)"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
+    <svg class="absolute bottom-6 left-6 opacity-40" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="transform:scaleY(-1)"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
+    <svg class="absolute bottom-6 right-6 opacity-40" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="transform:scale(-1)"><path d="M0 16Q0 0 16 0" stroke="#c9a96e" stroke-width=".8" fill="none"/><path d="M0 10Q0 0 10 0" stroke="#c9a96e" stroke-width=".4" fill="none"/></svg>
     <div style="animation:fadeUp .8s ease .3s both" class="text-center relative z-10">
-        <p class="text-gld-300/50 text-[8px] tracking-[.5em] uppercase mb-8 font-medium">The Wedding Of</p>
-        <h1 class="font-script text-5xl md:text-7xl mb-3" style="color:#e8d5a8">Karnoto</h1>
-        <div class="flex items-center justify-center gap-5 my-4"><div class="w-16 h-px bg-gradient-to-r from-transparent to-gld-300/25"></div><span class="gold-txt font-serif text-2xl">&amp;</span><div class="w-16 h-px bg-gradient-to-l from-transparent to-gld-300/25"></div></div>
-        <h1 class="font-script text-5xl md:text-7xl mb-2" style="color:#e8d5a8">Rohmatikal</h1>
-        <p class="font-serif text-gld-300/50 text-sm tracking-[.15em] italic font-light">Isnianti</p>
+        <p class="text-gld-300/80 text-[8px] tracking-[.5em] uppercase mb-8 font-medium">The Wedding Of</p>
+        <h1 class="font-script text-5xl md:text-7xl mb-3" style="color:#f5ead0">Karnoto</h1>
+        <div class="flex items-center justify-center gap-5 my-4"><div class="w-16 h-px bg-gradient-to-r from-transparent to-gld-300/60"></div><span class="gold-txt font-serif text-2xl">&amp;</span><div class="w-16 h-px bg-gradient-to-l from-transparent to-gld-300/60"></div></div>
+        <h1 class="font-script text-5xl md:text-7xl mb-2" style="color:#f5ead0">Rohmatikal</h1>
+        <p class="font-serif text-gld-300/80 text-sm tracking-[.15em] italic font-light">Isnianti</p>
     </div>
     <div class="dvd" style="animation:fadeUp .8s ease .7s both;padding:16px 0"><div class="ln"></div><div class="diamond"></div><div class="ln"></div></div>
     <div style="animation:fadeUp .8s ease .9s both" class="text-center mb-12 relative z-10">
-        <p class="text-gld-300/40 text-[8px] tracking-[.28em] uppercase font-medium">Kepada Yth. Bapak / Ibu / Saudara / i</p>
-        <p class="font-serif text-lg italic mt-2 font-light" style="color:rgba(232,213,168,.6)">di Tempat</p>
+        <p class="text-gld-300/70 text-[8px] tracking-[.28em] uppercase font-medium">Kepada Yth. Bapak / Ibu / Saudara / i</p>
+        <p class="font-serif text-lg italic mt-2 font-light" style="color:rgba(232,213,168,.9)">di Tempat</p>
     </div>
     <div style="animation:fadeUp .8s ease 1.1s both" class="relative z-10">
         <button class="btnp" onclick="openInv()" aria-label="Buka undangan"><svg class="si" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>Buka Undangan</button>
     </div>
-    <div class="absolute bottom-8 left-0 right-0 text-center" style="animation:fadeUp .8s ease 1.3s both"><div class="gline w-20 mx-auto mb-3"></div><p class="text-gld-300/30 text-[8px] tracking-[.3em] font-light">25 &#8226; 09 &#8226; 2026</p></div>
+    <div class="absolute bottom-8 left-0 right-0 text-center" style="animation:fadeUp .8s ease 1.3s both"><div class="gline w-20 mx-auto mb-3"></div><p class="text-gld-300/60 text-[8px] tracking-[.3em] font-light">25 &#8226; 09 &#8226; 2026</p></div>
 </div>
 
 <!-- ============ MAIN ============ -->
@@ -225,21 +225,21 @@
     <!-- HERO -->
     <section class="relative min-h-screen flex items-center justify-center sec-a" style="background:radial-gradient(ellipse at 50% 20%,rgba(201,169,110,.04) 0%,transparent 60%)">
         <div class="relative z-10 max-w-6xl mx-auto px-5 py-28">
-            <div class="text-center mb-2 rv"><p class="text-gld-300/40 text-xs tracking-[.4em] uppercase" dir="rtl">&#1576;&#1616;&#1587;&#1618;&#1605;&#1616; &#1575;&#1604;&#1604;&#1617;&#1614;&#1607;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1618;&#1605;&#1614;&#1606;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1616;&#1610;&#1605;&#1616;</p><p class="text-gld-300/30 text-[11px] mt-2 tracking-wider font-light">Dengan Menyebut Nama Allah Yang Maha Pengasih lagi Maha Penyayang</p></div>
+            <div class="text-center mb-2 rv"><p class="text-gld-300/80 text-xs tracking-[.4em] uppercase" dir="rtl">&#1576;&#1616;&#1587;&#1618;&#1605;&#1616; &#1575;&#1604;&#1604;&#1617;&#1614;&#1607;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1618;&#1605;&#1614;&#1606;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1616;&#1610;&#1605;&#1616;</p><p class="text-gld-300/70 text-[11px] mt-2 tracking-wider font-light">Dengan Menyebut Nama Allah Yang Maha Pengasih lagi Maha Penyayang</p></div>
             <div class="dvd rv"><div class="ln"></div><div class="diamond"></div><div class="ln"></div></div>
-            <div class="text-center mb-10 rv"><p class="text-gld-300/40 text-[8px] tracking-[.3em] uppercase mb-1.5 font-medium">Kehormatan bagi kami</p><p class="text-gld-300/30 text-xs tracking-wider font-light">mengundang Bapak/Ibu/Saudara/i di tempat</p></div>
+            <div class="text-center mb-10 rv"><p class="text-gld-300/80 text-[8px] tracking-[.3em] uppercase mb-1.5 font-medium">Kehormatan bagi kami</p><p class="text-gld-300/70 text-xs tracking-wider font-light">mengundang Bapak/Ibu/Saudara/i di tempat</p></div>
             <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 mb-16">
-                <div class="rv" style="transition-delay:.1s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(-3deg)"><img src="./oto.png" alt="Karnoto" loading="eager" fetchpriority="high"><div class="clbl"><p class="text-gld-300/40 text-[8px] tracking-[.25em] uppercase mb-1">Mempelai Pria</p><h3 class="font-script text-3xl" style="color:#e8d5a8">Karnoto</h3></div></div></div>
-                <div class="rv flex-shrink-0 -mt-8 md:mt-0" style="transition-delay:.15s"><div class="w-20 h-20 rounded-full flex items-center justify-center border border-gld-300/20" style="background:rgba(26,31,46,.8)"><span class="gold-txt font-serif text-3xl font-medium">&amp;</span></div></div>
-                <div class="rv" style="transition-delay:.2s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(3deg)"><img src="./tika.png" alt="Rohmatikal Isnianti" loading="eager" fetchpriority="high"><div class="clbl"><p class="text-gld-300/40 text-[8px] tracking-[.25em] uppercase mb-1">Mempelai Wanita</p><h3 class="font-script text-3xl" style="color:#e8d5a8">Rohmatikal</h3><p class="font-serif text-gld-300/40 text-sm italic">Isnianti</p></div></div></div>
+                <div class="rv" style="transition-delay:.1s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(-3deg)"><img src="./oto.png" alt="Karnoto" loading="eager" fetchpriority="high"><div class="clbl"><p class="text-gld-300/80 text-[8px] tracking-[.25em] uppercase mb-1">Mempelai Pria</p><h3 class="font-script text-3xl" style="color:#f5ead0">Karnoto</h3></div></div></div>
+                <div class="rv flex-shrink-0 -mt-8 md:mt-0" style="transition-delay:.15s"><div class="w-20 h-20 rounded-full flex items-center justify-center border border-gld-300/40" style="background:rgba(26,31,46,.8)"><span class="gold-txt font-serif text-3xl font-medium">&amp;</span></div></div>
+                <div class="rv" style="transition-delay:.2s"><div class="pcard w-52 h-64 md:w-64 md:h-96" style="transform:rotate(3deg)"><img src="./tika.png" alt="Rohmatikal Isnianti" loading="eager" fetchpriority="high"><div class="clbl"><p class="text-gld-300/80 text-[8px] tracking-[.25em] uppercase mb-1">Mempelai Wanita</p><h3 class="font-script text-3xl" style="color:#f5ead0">Rohmatikal</h3><p class="font-serif text-gld-300/80 text-sm italic">Isnianti</p></div></div></div>
             </div>
             <div class="text-center rv" style="transition-delay:.3s">
-                <h2 class="font-script text-[3.5rem] md:text-[6.5rem] leading-[.9]" style="color:#e8d5a8">Karnoto</h2>
-                <div class="flex items-center justify-center gap-6 my-3"><div class="w-20 h-px bg-gradient-to-r from-transparent to-gld-300/20"></div><span class="gold-txt font-serif text-2xl">&amp;</span><div class="w-20 h-px bg-gradient-to-l from-transparent to-gld-300/20"></div></div>
-                <h2 class="font-script text-[3.5rem] md:text-[6.5rem] leading-[.9] mb-2" style="color:#e8d5a8">Rohmatikal</h2>
-                <p class="font-serif text-gld-300/50 text-lg md:text-xl tracking-[.12em] italic font-light mt-2">Isnianti</p>
+                <h2 class="font-script text-[3.5rem] md:text-[6.5rem] leading-[.9]" style="color:#f5ead0">Karnoto</h2>
+                <div class="flex items-center justify-center gap-6 my-3"><div class="w-20 h-px bg-gradient-to-r from-transparent to-gld-300/50"></div><span class="gold-txt font-serif text-2xl">&amp;</span><div class="w-20 h-px bg-gradient-to-l from-transparent to-gld-300/50"></div></div>
+                <h2 class="font-script text-[3.5rem] md:text-[6.5rem] leading-[.9] mb-2" style="color:#f5ead0">Rohmatikal</h2>
+                <p class="font-serif text-gld-300/80 text-lg md:text-xl tracking-[.12em] italic font-light mt-2">Isnianti</p>
             </div>
-            <div class="text-center mt-14 rv" style="transition-delay:.4s"><a href="#quran" class="inline-flex flex-col items-center gap-2 text-gld-300/30" aria-label="Scroll"><span class="text-[8px] tracking-[.3em] uppercase font-medium">Scroll</span><span class="arrw"></span></a></div>
+            <div class="text-center mt-14 rv" style="transition-delay:.4s"><a href="#quran" class="inline-flex flex-col items-center gap-2 text-gld-300/60" aria-label="Scroll"><span class="text-[8px] tracking-[.3em] uppercase font-medium">Scroll</span><span class="arrw"></span></a></div>
         </div>
     </section>
 
@@ -247,11 +247,11 @@
     <section id="quran" class="py-24 px-5 cv sec-b">
         <div class="max-w-3xl mx-auto text-center rv">
             <div class="gframe"><div class="relative p-8 md:p-10">
-                <svg class="absolute -top-3 left-1/2 -translate-x-1/2" width="22" height="22" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8L10 0Z" fill="#c9a96e" opacity=".5"/></svg>
-                <p class="text-gld-300/40 text-[8px] tracking-[.4em] uppercase mb-6 font-medium">Ayat Suci Al-Qur'an</p>
-                <p class="font-serif text-xl md:text-2xl leading-[1.9] mb-6 italic font-light" style="color:rgba(245,240,232,.75)">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+                <svg class="absolute -top-3 left-1/2 -translate-x-1/2" width="22" height="22" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8L10 0Z" fill="#c9a96e" opacity=".8"/></svg>
+                <p class="text-gld-300/80 text-[8px] tracking-[.4em] uppercase mb-6 font-medium">Ayat Suci Al-Qur'an</p>
+                <p class="font-serif text-xl md:text-2xl leading-[1.9] mb-6 italic font-light" style="color:rgba(245,240,232,.95)">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
                 <div class="gline w-12 mx-auto mb-4"></div>
-                <p class="text-gld-300/50 text-sm tracking-wider font-medium">QS. Ar-Rum: 21</p>
+                <p class="text-gld-300/90 text-sm tracking-wider font-medium">QS. Ar-Rum: 21</p>
             </div></div>
         </div>
     </section>
@@ -259,24 +259,24 @@
     <!-- MEMPELAI -->
     <section class="py-24 px-5 cv sec-a">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16 rv"><p class="text-gld-300/40 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Insya Allah</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#e8d5a8">Mempelai</h2><div class="gline w-12 mx-auto mt-6"></div></div>
+            <div class="text-center mb-16 rv"><p class="text-gld-300/80 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Insya Allah</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">Mempelai</h2><div class="gline w-12 mx-auto mt-6"></div></div>
             <div class="grid md:grid-cols-2 gap-16">
                 <div class="text-center rv" style="transition-delay:.1s">
-                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/20 shadow-lg shadow-black/20"><img src="./oto.png" alt="Karnoto" class="w-full h-full object-cover" loading="lazy"></div>
-                    <p class="text-gld-300/40 text-[8px] tracking-[.25em] uppercase mb-2 font-medium">Mempelai Pria</p>
-                    <h3 class="font-script text-5xl mb-4" style="color:#e8d5a8">Karnoto</h3>
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/40 shadow-lg shadow-black/20"><img src="./oto.png" alt="Karnoto" class="w-full h-full object-cover" loading="lazy"></div>
+                    <p class="text-gld-300/80 text-[8px] tracking-[.25em] uppercase mb-2 font-medium">Mempelai Pria</p>
+                    <h3 class="font-script text-5xl mb-4" style="color:#f5ead0">Karnoto</h3>
                     <div class="gline w-8 mx-auto mb-4"></div>
-                    <p class="text-sm leading-[2] font-light" style="color:rgba(245,240,232,.55)">Putra dari<br><span class="font-medium" style="color:rgba(245,240,232,.8)">Bapak Suhada</span><br><span class="text-gld-300/20 text-xs my-0.5 block">&amp;</span><span class="font-medium" style="color:rgba(245,240,232,.8)">Ibu Tumbras</span></p>
-                    <div class="addr mt-5 text-left"><div class="flex items-start gap-2.5"><svg class="si text-gld-300/40 mt-0.5 flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.45)">Asemdoyong, RT 48 / RW 10, Taman, Pemalang</p></div></div>
+                    <p class="text-sm leading-[2] font-light" style="color:rgba(245,240,232,.8)">Putra dari<br><span class="font-medium" style="color:rgba(245,240,232,.95)">Bapak Suhada</span><br><span class="text-gld-300/60 text-xs my-0.5 block">&amp;</span><span class="font-medium" style="color:rgba(245,240,232,.95)">Ibu Tumbras</span></p>
+                    <div class="addr mt-5 text-left"><div class="flex items-start gap-2.5"><svg class="si text-gld-300/80 mt-0.5 flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.7)">Asemdoyong, RT 48 / RW 10, Taman, Pemalang</p></div></div>
                 </div>
                 <div class="text-center rv" style="transition-delay:.2s">
-                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/20 shadow-lg shadow-black/20"><img src="./tika.png" alt="Rohmatikal Isnianti" class="w-full h-full object-cover" loading="lazy"></div>
-                    <p class="text-gld-300/40 text-[8px] tracking-[.25em] uppercase mb-2 font-medium">Mempelai Wanita</p>
-                    <h3 class="font-script text-5xl mb-1" style="color:#e8d5a8">Rohmatikal</h3>
-                    <p class="font-serif text-gld-300/40 text-lg italic mb-4 font-light">Isnianti</p>
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-gld-300/40 shadow-lg shadow-black/20"><img src="./tika.png" alt="Rohmatikal Isnianti" class="w-full h-full object-cover" loading="lazy"></div>
+                    <p class="text-gld-300/80 text-[8px] tracking-[.25em] uppercase mb-2 font-medium">Mempelai Wanita</p>
+                    <h3 class="font-script text-5xl mb-1" style="color:#f5ead0">Rohmatikal</h3>
+                    <p class="font-serif text-gld-300/80 text-lg italic mb-4 font-light">Isnianti</p>
                     <div class="gline w-8 mx-auto mb-4"></div>
-                    <p class="text-sm leading-[2] font-light" style="color:rgba(245,240,232,.55)">Putri dari<br><span class="font-medium" style="color:rgba(245,240,232,.8)">Bapak Kastaman</span><br><span class="text-gld-300/20 text-xs my-0.5 block">&amp;</span><span class="font-medium" style="color:rgba(245,240,232,.8)">Ibu Kusyanti</span></p>
-                    <div class="addr mt-5 text-left"><div class="flex items-start gap-2.5"><svg class="si text-gld-300/40 mt-0.5 flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.45)">Kelurahan Pelutan, RT 06 / RW 02, Kecamatan Pemalang, sebelah timur SDN 12 Pelutan</p></div></div>
+                    <p class="text-sm leading-[2] font-light" style="color:rgba(245,240,232,.8)">Putri dari<br><span class="font-medium" style="color:rgba(245,240,232,.95)">Bapak Kastaman</span><br><span class="text-gld-300/60 text-xs my-0.5 block">&amp;</span><span class="font-medium" style="color:rgba(245,240,232,.95)">Ibu Kusyanti</span></p>
+                    <div class="addr mt-5 text-left"><div class="flex items-start gap-2.5"><svg class="si text-gld-300/80 mt-0.5 flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.7)">Kelurahan Pelutan, RT 06 / RW 02, Kecamatan Pemalang, sebelah timur SDN 12 Pelutan</p></div></div>
                 </div>
             </div>
         </div>
@@ -285,7 +285,7 @@
     <!-- GALLERY -->
     <section class="py-24 px-5 cv sec-b">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-14 rv"><p class="text-gld-300/40 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Galeri</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#e8d5a8">Momen Bahagia</h2><div class="gline w-12 mx-auto mt-6"></div></div>
+            <div class="text-center mb-14 rv"><p class="text-gld-300/80 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Galeri</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">Momen Bahagia</h2><div class="gline w-12 mx-auto mt-6"></div></div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
                 <div class="gcard aspect-[3/4] rv" style="transform:rotate(-1.5deg);transition-delay:.05s" onclick="openLB('./otodantika1.jpeg')"><img src="./otodantika1.jpeg" alt="Pre-wedding 1" loading="lazy"></div>
                 <div class="gcard aspect-[3/4] md:row-span-2 rv" style="transform:rotate(1deg);transition-delay:.1s" onclick="openLB('./otodantika2.jpeg')"><img src="./otodantika2.jpeg" alt="Pre-wedding 2" loading="lazy"></div>
@@ -298,7 +298,7 @@
     <!-- EVENT -->
     <section id="event" class="py-24 px-5 cv sec-a">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-6 rv"><p class="text-gld-300/40 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Simpan Tanggalnya</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#e8d5a8">Waktu &amp; Tempat</h2><div class="gline w-12 mx-auto mt-6"></div></div>
+            <div class="text-center mb-6 rv"><p class="text-gld-300/80 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Simpan Tanggalnya</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">Waktu &amp; Tempat</h2><div class="gline w-12 mx-auto mt-6"></div></div>
             <div class="flex justify-center gap-3 md:gap-5 my-14 rv" style="transition-delay:.1s">
                 <div class="cbox"><div class="cnum" id="cd-d">00</div><div class="clab">Hari</div></div>
                 <div class="cbox"><div class="cnum" id="cd-h">00</div><div class="clab">Jam</div></div>
@@ -306,8 +306,8 @@
                 <div class="cbox"><div class="cnum" id="cd-s">00</div><div class="clab">Detik</div></div>
             </div>
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="ecard rv" style="transition-delay:.15s"><div class="text-center"><div class="w-14 h-14 mx-auto mb-5 rounded-xl flex items-center justify-center" style="background:rgba(201,169,110,.08)"><svg class="si text-gld-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><p class="text-gld-300/40 text-[8px] tracking-[.3em] uppercase mb-2 font-medium">Akad Nikah</p><h3 class="font-serif text-xl md:text-2xl font-light mb-6" style="color:#e8d5a8">Ikrar Suci Pernikahan</h3><div class="space-y-3"><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.6)"><svg class="si text-gld-300/30 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span class="text-sm font-light">Jumat, 25 September 2026</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.6)"><svg class="si text-gld-300/30 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="text-sm font-light">08:00 WIB &#8212; Selesai</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.6)"><svg class="si text-gld-300/30 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="text-sm font-light">Rumah Mempelai Putri</span></div></div><div class="addr mt-5 text-left"><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.4)">Kelurahan Pelutan, RT 06 / RW 02, Kecamatan Pemalang, sebelah timur SDN 12 Pelutan</p></div></div></div>
-                <div class="ecard rv" style="transition-delay:.25s"><div class="text-center"><div class="w-14 h-14 mx-auto mb-5 rounded-xl flex items-center justify-center" style="background:rgba(201,169,110,.08)"><svg class="si text-gld-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"/></svg></div><p class="text-gld-300/40 text-[8px] tracking-[.3em] uppercase mb-2 font-medium">Resepsi</p><h3 class="font-serif text-xl md:text-2xl font-light mb-6" style="color:#e8d5a8">Pesta Pernikahan</h3><div class="space-y-3"><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.6)"><svg class="si text-gld-300/30 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span class="text-sm font-light">Jumat, 25 September 2026</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.6)"><svg class="si text-gld-300/30 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="text-sm font-light">10:00 WIB &#8212; Selesai</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.6)"><svg class="si text-gld-300/30 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="text-sm font-light">Rumah Mempelai Putri</span></div></div><div class="addr mt-5 text-left"><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.4)">Kelurahan Pelutan, RT 06 / RW 02, Kecamatan Pemalang, sebelah timur SDN 12 Pelutan</p></div></div></div>
+                <div class="ecard rv" style="transition-delay:.15s"><div class="text-center"><div class="w-14 h-14 mx-auto mb-5 rounded-xl flex items-center justify-center" style="background:rgba(201,169,110,.15)"><svg class="si text-gld-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><p class="text-gld-300/80 text-[8px] tracking-[.3em] uppercase mb-2 font-medium">Akad Nikah</p><h3 class="font-serif text-xl md:text-2xl font-light mb-6" style="color:#f5ead0">Ikrar Suci Pernikahan</h3><div class="space-y-3"><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.9)"><svg class="si text-gld-300/60 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span class="text-sm font-light">Jumat, 25 September 2026</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.9)"><svg class="si text-gld-300/60 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="text-sm font-light">08:00 WIB &#8212; Selesai</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.9)"><svg class="si text-gld-300/60 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="text-sm font-light">Rumah Mempelai Putri</span></div></div><div class="addr mt-5 text-left"><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.7)">Kelurahan Pelutan, RT 06 / RW 02, Kecamatan Pemalang, sebelah timur SDN 12 Pelutan</p></div></div></div>
+                <div class="ecard rv" style="transition-delay:.25s"><div class="text-center"><div class="w-14 h-14 mx-auto mb-5 rounded-xl flex items-center justify-center" style="background:rgba(201,169,110,.15)"><svg class="si text-gld-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"/></svg></div><p class="text-gld-300/80 text-[8px] tracking-[.3em] uppercase mb-2 font-medium">Resepsi</p><h3 class="font-serif text-xl md:text-2xl font-light mb-6" style="color:#f5ead0">Pesta Pernikahan</h3><div class="space-y-3"><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.9)"><svg class="si text-gld-300/60 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span class="text-sm font-light">Jumat, 25 September 2026</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.9)"><svg class="si text-gld-300/60 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="text-sm font-light">10:00 WIB &#8212; Selesai</span></div><div class="flex items-center justify-center gap-3" style="color:rgba(245,240,232,.9)"><svg class="si text-gld-300/60 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="text-sm font-light">Rumah Mempelai Putri</span></div></div><div class="addr mt-5 text-left"><p class="text-xs font-light leading-relaxed" style="color:rgba(245,240,232,.7)">Kelurahan Pelutan, RT 06 / RW 02, Kecamatan Pemalang, sebelah timur SDN 12 Pelutan</p></div></div></div>
             </div>
             <div class="text-center mt-10 rv" style="transition-delay:.35s"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Karnoto+%26+Rohmatikal&dates=20260925T010000Z/20260925T050000Z&details=Akad+Nikah+jam+08.00+WIB%0AResepsi+jam+10.00+WIB&location=Kel.+Pelutan+RT06%2FRW02+Pemalang" target="_blank" rel="noopener noreferrer" class="btns"><svg class="si" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Simpan di Kalender</a></div>
         </div>
@@ -316,7 +316,7 @@
     <!-- MAP -->
     <section class="py-24 px-5 cv sec-b">
         <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-10 rv"><p class="text-gld-300/40 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Lokasi</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#e8d5a8">Peta Lokasi</h2><p class="text-gld-300/25 text-[11px] mt-3 font-light tracking-wider">Rumah Mempelai Putri &#8212; Kel. Pelutan, Pemalang</p><div class="gline w-12 mx-auto mt-6"></div></div>
+            <div class="text-center mb-10 rv"><p class="text-gld-300/80 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Lokasi</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">Peta Lokasi</h2><p class="text-gld-300/70 text-[11px] mt-3 font-light tracking-wider">Rumah Mempelai Putri &#8212; Kel. Pelutan, Pemalang</p><div class="gline w-12 mx-auto mt-6"></div></div>
             <div class="mwrap rv" style="transition-delay:.1s"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.5!2d109.376303!3d-6.884123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTMnMDIuOCJTIDEwOcKwMjInMzQuNyJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="380" style="border:0;display:block;filter:invert(.9) hue-rotate(180deg) brightness(.8) contrast(1.1)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta lokasi"></iframe></div>
             <div class="text-center mt-8 rv" style="transition-delay:.15s"><a href="https://maps.google.com/?q=-6.884123,109.376303" target="_blank" rel="noopener noreferrer" class="btnp"><svg class="si" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Buka di Google Maps</a></div>
         </div>
@@ -325,19 +325,19 @@
     <!-- RSVP + WISHES -->
     <section id="rsvp" class="py-24 px-5 cv sec-a">
         <div class="max-w-xl mx-auto">
-            <div class="text-center mb-12 rv"><p class="text-gld-300/40 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Konfirmasi Kehadiran</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#e8d5a8">RSVP</h2><div class="gline w-12 mx-auto mt-6"></div></div>
+            <div class="text-center mb-12 rv"><p class="text-gld-300/80 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Konfirmasi Kehadiran</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">RSVP</h2><div class="gline w-12 mx-auto mt-6"></div></div>
             <div class="gframe rv" style="transition-delay:.1s"><div class="p-6 md:p-8">
                 <form id="rF" onsubmit="subRS(event)" novalidate>
                     <div class="space-y-5">
-                        <div><label for="rN" class="block text-gld-300/40 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Dari (Nama Anda)</label><input type="text" id="rN" class="fi" placeholder="Masukkan nama lengkap Anda" required autocomplete="name"></div>
-                        <div><label class="block text-gld-300/40 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Konfirmasi Kehadiran</label>
+                        <div><label for="rN" class="block text-gld-300/80 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Dari (Nama Anda)</label><input type="text" id="rN" class="fi" placeholder="Masukkan nama lengkap Anda" required autocomplete="name"></div>
+                        <div><label class="block text-gld-300/80 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Konfirmasi Kehadiran</label>
                             <div class="grid grid-cols-2 gap-3">
-                                <label class="cursor-pointer"><input type="radio" name="att" value="hadir" class="peer sr-only" required><div class="p-4 rounded-xl border border-gld-300/15 text-center transition-colors peer-checked:border-gld-300/50 peer-checked:bg-gld-300/5"><svg class="si text-gld-300/30 mx-auto mb-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><p class="text-sm font-medium" style="color:rgba(245,240,232,.7)">Hadir</p></div></label>
-                                <label class="cursor-pointer"><input type="radio" name="att" value="tidak" class="peer sr-only"><div class="p-4 rounded-xl border border-gld-300/15 text-center transition-colors peer-checked:border-red-400/50 peer-checked:bg-red-400/5"><svg class="si text-gld-300/30 mx-auto mb-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><p class="text-sm font-medium" style="color:rgba(245,240,232,.7)">Tidak Hadir</p></div></label>
+                                <label class="cursor-pointer"><input type="radio" name="att" value="hadir" class="peer sr-only" required><div class="p-4 rounded-xl border border-gld-300/25 text-center transition-colors peer-checked:border-gld-300/70 peer-checked:bg-gld-300/10"><svg class="si text-gld-300/70 mx-auto mb-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><p class="text-sm font-medium" style="color:rgba(245,240,232,.9)">Hadir</p></div></label>
+                                <label class="cursor-pointer"><input type="radio" name="att" value="tidak" class="peer sr-only"><div class="p-4 rounded-xl border border-gld-300/25 text-center transition-colors peer-checked:border-red-400/70 peer-checked:bg-red-400/10"><svg class="si text-gld-300/70 mx-auto mb-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><p class="text-sm font-medium" style="color:rgba(245,240,232,.9)">Tidak Hadir</p></div></label>
                             </div>
                         </div>
-                        <div><label for="rG" class="block text-gld-300/40 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Jumlah Tamu</label><select id="rG" class="fi"><option value="1">1 Orang</option><option value="2" selected>2 Orang</option><option value="3">3 Orang</option><option value="4">4 Orang</option><option value="5">5 Orang</option></select></div>
-                        <div><label for="rM" class="block text-gld-300/40 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Ucapan &amp; Doa</label><textarea id="rM" class="fi" rows="3" placeholder="Tulis ucapan dan doa untuk kedua mempelai..."></textarea></div>
+                        <div><label for="rG" class="block text-gld-300/80 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Jumlah Tamu</label><select id="rG" class="fi"><option value="1">1 Orang</option><option value="2" selected>2 Orang</option><option value="3">3 Orang</option><option value="4">4 Orang</option><option value="5">5 Orang</option></select></div>
+                        <div><label for="rM" class="block text-gld-300/80 text-[8px] tracking-[.2em] uppercase mb-2 font-medium">Ucapan &amp; Doa</label><textarea id="rM" class="fi" rows="3" placeholder="Tulis ucapan dan doa untuk kedua mempelai..."></textarea></div>
                         <button type="submit" id="sB" class="btnp w-full justify-center"><svg class="si" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>Kirim Konfirmasi</button>
                     </div>
                 </form>
@@ -346,9 +346,9 @@
             <!-- WISHES LIST — dengan lazy loading -->
             <div id="wL" class="mt-14">
                 <div class="text-center mb-6 rv" style="transition-delay:.15s">
-                    <p class="text-gld-300/40 text-[8px] tracking-[.3em] uppercase font-medium">Ucapan &amp; Doa</p>
+                    <p class="text-gld-300/80 text-[8px] tracking-[.3em] uppercase font-medium">Ucapan &amp; Doa</p>
                     <div class="gline w-8 mx-auto mt-4"></div>
-                    <p id="wCount" class="text-gld-300/20 text-[10px] mt-3 tracking-wider" style="display:none"></p>
+                    <p id="wCount" class="text-gld-300/60 text-[10px] mt-3 tracking-wider" style="display:none"></p>
                 </div>
                 <div id="wCards" class="space-y-4">
                     <div class="skel" id="skel1"><div class="flex items-start gap-4"><div class="skel-circle"></div><div class="flex-1 space-y-3"><div class="skel-row w60"></div><div class="skel-row h10 w40"></div><div class="skel-row w80"></div><div class="skel-row h10 w60"></div></div></div></div>
@@ -369,11 +369,11 @@
     <!-- GIFT -->
     <section id="kondangan" class="py-24 px-5 cv sec-b">
         <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-4 rv"><p class="text-gld-300/40 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Wedding Gift</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#e8d5a8">Amplop Digital</h2><div class="gline w-12 mx-auto mt-6"></div></div>
-            <p class="text-center text-xs font-light max-w-md mx-auto mb-12 rv leading-relaxed" style="color:rgba(245,240,232,.35);transition-delay:.05s">Doa restu Anda merupakan karunia yang sangat berarti. Namun jika memberi tanda kasih, kami menyediakan amplop digital:</p>
+            <div class="text-center mb-4 rv"><p class="text-gld-300/80 text-[8px] tracking-[.4em] uppercase mb-4 font-medium">Wedding Gift</p><h2 class="font-serif text-3xl md:text-5xl font-light" style="color:#f5ead0">Amplop Digital</h2><div class="gline w-12 mx-auto mt-6"></div></div>
+            <p class="text-center text-xs font-light max-w-md mx-auto mb-12 rv leading-relaxed" style="color:rgba(245,240,232,.6);transition-delay:.05s">Doa restu Anda merupakan karunia yang sangat berarti. Namun jika memberi tanda kasih, kami menyediakan amplop digital:</p>
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="rv" style="transition-delay:.1s"><div class="bcard"><div class="flex items-start justify-between mb-8"><div class="chip"></div><svg width="30" height="18" viewBox="0 0 30 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="rgba(201,169,110,.25)"/><circle cx="21" cy="9" r="9" fill="rgba(201,169,110,.15)"/></svg></div><div class="rek mb-6">1200 0102 6763 6</div><div class="flex items-end justify-between"><div><p class="cl mb-1">Bank Mandiri</p><p class="cn">Karnoto</p></div><p class="text-[7px] tracking-wider uppercase font-medium" style="color:rgba(201,169,110,.3)">Mempelai Pria</p></div></div><button onclick="cpR('1200010267636',this)" class="btns text-[10px] py-3 px-4 w-full justify-center mt-4"><svg class="si" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Salin Nomor Rekening</button></div>
-                <div class="rv" style="transition-delay:.2s"><div class="bcard"><div class="flex items-start justify-between mb-8"><div class="chip"></div><svg width="30" height="18" viewBox="0 0 30 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="rgba(201,169,110,.25)"/><circle cx="21" cy="9" r="9" fill="rgba(201,169,110,.15)"/></svg></div><div class="rek mb-6">1390 0272 2947 9</div><div class="flex items-end justify-between"><div><p class="cl mb-1">Bank Mandiri</p><p class="cn">Rohmatikal Isnianti</p></div><p class="text-[7px] tracking-wider uppercase font-medium" style="color:rgba(201,169,110,.3)">Mempelai Wanita</p></div></div><button onclick="cpR('1390027229479',this)" class="btns text-[10px] py-3 px-4 w-full justify-center mt-4"><svg class="si" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Salin Nomor Rekening</button></div>
+                <div class="rv" style="transition-delay:.1s"><div class="bcard"><div class="flex items-start justify-between mb-8"><div class="chip"></div><svg width="30" height="18" viewBox="0 0 30 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="rgba(201,169,110,.35)"/><circle cx="21" cy="9" r="9" fill="rgba(201,169,110,.25)"/></svg></div><div class="rek mb-6">1200 0102 6763 6</div><div class="flex items-end justify-between"><div><p class="cl mb-1">Bank Mandiri</p><p class="cn">Karnoto</p></div><p class="text-[7px] tracking-wider uppercase font-medium" style="color:rgba(201,169,110,.7)">Mempelai Pria</p></div></div><button onclick="cpR('1200010267636',this)" class="btns text-[10px] py-3 px-4 w-full justify-center mt-4"><svg class="si" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Salin Nomor Rekening</button></div>
+                <div class="rv" style="transition-delay:.2s"><div class="bcard"><div class="flex items-start justify-between mb-8"><div class="chip"></div><svg width="30" height="18" viewBox="0 0 30 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="rgba(201,169,110,.35)"/><circle cx="21" cy="9" r="9" fill="rgba(201,169,110,.25)"/></svg></div><div class="rek mb-6">1390 0272 2947 9</div><div class="flex items-end justify-between"><div><p class="cl mb-1">Bank Mandiri</p><p class="cn">Rohmatikal Isnianti</p></div><p class="text-[7px] tracking-wider uppercase font-medium" style="color:rgba(201,169,110,.7)">Mempelai Wanita</p></div></div><button onclick="cpR('1390027229479',this)" class="btns text-[10px] py-3 px-4 w-full justify-center mt-4"><svg class="si" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Salin Nomor Rekening</button></div>
             </div>
         </div>
     </section>
@@ -381,24 +381,24 @@
     <!-- CLOSING -->
     <section class="py-28 px-5 cv sec-a">
         <div class="max-w-2xl mx-auto text-center rv">
-            <svg width="80" height="12" viewBox="0 0 80 12" fill="none" class="mx-auto mb-10 opacity-20" aria-hidden="true"><path d="M0 6Q10 0 20 6Q30 12 40 6Q50 0 60 6Q70 12 80 6" stroke="#c9a96e" stroke-width=".5" fill="none"/></svg>
-            <p class="text-gld-300/40 text-[8px] tracking-[.45em] uppercase mb-6 font-medium">Merupakan Kehormatan &amp; Kebahagiaan</p>
-            <p class="text-sm leading-[2] font-light mb-3" style="color:rgba(245,240,232,.45)">Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i,</p>
-            <p class="text-sm leading-[2] font-light mb-12" style="color:rgba(245,240,232,.45)">kami mengucapkan terima kasih.</p>
-            <p class="text-base font-serif italic font-light mb-14" style="color:rgba(232,213,168,.6)">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+            <svg width="80" height="12" viewBox="0 0 80 12" fill="none" class="mx-auto mb-10 opacity-50" aria-hidden="true"><path d="M0 6Q10 0 20 6Q30 12 40 6Q50 0 60 6Q70 12 80 6" stroke="#c9a96e" stroke-width=".5" fill="none"/></svg>
+            <p class="text-gld-300/80 text-[8px] tracking-[.45em] uppercase mb-6 font-medium">Merupakan Kehormatan &amp; Kebahagiaan</p>
+            <p class="text-sm leading-[2] font-light mb-3" style="color:rgba(245,240,232,.7)">Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i,</p>
+            <p class="text-sm leading-[2] font-light mb-12" style="color:rgba(245,240,232,.7)">kami mengucapkan terima kasih.</p>
+            <p class="text-base font-serif italic font-light mb-14" style="color:rgba(232,213,168,.9)">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
             <div class="dvd" style="padding:12px 0"><div class="ln"></div><div class="diamond"></div><div class="ln"></div></div>
-            <h3 class="font-script text-5xl md:text-7xl mb-1" style="color:#e8d5a8">Karnoto</h3>
+            <h3 class="font-script text-5xl md:text-7xl mb-1" style="color:#f5ead0">Karnoto</h3>
             <span class="gold-txt font-serif text-2xl">&amp;</span>
-            <h3 class="font-script text-5xl md:text-7xl mb-3 mt-1" style="color:#e8d5a8">Rohmatikal</h3>
-            <svg width="80" height="12" viewBox="0 0 80 12" fill="none" class="mx-auto mt-12 opacity-20" aria-hidden="true"><path d="M0 6Q10 0 20 6Q30 12 40 6Q50 0 60 6Q70 12 80 6" stroke="#c9a96e" stroke-width=".5" fill="none"/></svg>
+            <h3 class="font-script text-5xl md:text-7xl mb-3 mt-1" style="color:#f5ead0">Rohmatikal</h3>
+            <svg width="80" height="12" viewBox="0 0 80 12" fill="none" class="mx-auto mt-12 opacity-50" aria-hidden="true"><path d="M0 6Q10 0 20 6Q30 12 40 6Q50 0 60 6Q70 12 80 6" stroke="#c9a96e" stroke-width=".5" fill="none"/></svg>
         </div>
     </section>
-    <footer class="py-8 px-5 text-center sec-b"><p class="text-[7px] tracking-[.2em] font-light" style="color:rgba(201,169,110,.2)">Made with love for Karnoto &amp; Rohmatikal</p></footer>
+    <footer class="py-8 px-5 text-center sec-b"><p class="text-[7px] tracking-[.2em] font-light" style="color:rgba(201,169,110,.6)">Made with love for Karnoto &amp; Rohmatikal</p></footer>
 </main>
 
 <button id="mBtn" class="mbtn" onclick="tM()" aria-label="Musik"><div class="flex items-end gap-[3px] h-5"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div></button>
 <a href="https://wa.me/6281318559382?text=Assalamu'alaikum%2C%20saya%20ingin%20konfirmasi%20kehadiran%20di%20acara%20pernikahan%20Karnoto%20%26%20Rohmatikal" target="_blank" rel="noopener noreferrer" class="waf" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><div class="ndot"></div></a>
-<button id="btt" class="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Atas"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+<button id="btt" class="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Atas"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8d5a8" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg></button>
 
 <script>
 /*
@@ -462,7 +462,7 @@ function loadWishes(){
             {name:"Ahmad Fauzi",attend:"hadir",guests:2,message:"Barakallahu lakuma wa baraka 'alaikuma wa jama'a bainakuma fii khair. Aamiin.",time:"2026-01-20T10:00:00Z"},
             {name:"Siti Nurhaliza",attend:"hadir",guests:1,message:"Selamat menempuh hidup baru! Happy wedding!",time:"2026-01-21T08:00:00Z"}
         ];
-        allWishes.sort(function(a,b){return new Date(b.time)-new Date(a.time)});
+        allWishes.sort(function(a,b){return new Date(b.time)-new Date(a.time)}); // Fix date parsing
         shownCount=0;
         renderBatch();
         return;
@@ -513,7 +513,7 @@ function renderBatch(){
 
     // Jika tidak ada data
     if(total===0){
-        container.innerHTML='<div class="text-center py-10"><p style="color:rgba(201,169,110,.25);font-size:.85rem;font-style:italic">Belum ada ucapan. Jadilah yang pertama!</p></div>';
+        container.innerHTML='<div class="text-center py-10"><p style="color:rgba(201,169,110,.7);font-size:.85rem;font-style:italic">Belum ada ucapan. Jadilah yang pertama!</p></div>';
         wrap.style.display='none';
         return;
     }
@@ -564,19 +564,19 @@ function createWishCard(w){
     var ini=w.name.charAt(0).toUpperCase();
     var stLabel=w.attend==='hadir'?'Hadir':'Tidak Hadir';
     var badgeStyle=w.attend==='hadir'
-        ?'background:rgba(201,169,110,.08);color:#c9a96e;border-color:rgba(201,169,110,.15)'
-        :'background:rgba(220,50,50,.08);color:#e87070;border-color:rgba(220,50,50,.15)';
+        ?'background:rgba(201,169,110,.15);color:#e8d5a8;border-color:rgba(201,169,110,.4)'
+        :'background:rgba(220,50,50,.15);color:#ff8888;border-color:rgba(220,50,50,.4)';
 
     card.innerHTML='<div class="flex items-start gap-4">'
-        +'<div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(201,169,110,.1)">'
-        +'<span class="font-serif text-sm" style="color:#c9a96e">'+ini+'</span></div>'
+        +'<div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(201,169,110,.15)">'
+        +'<span class="font-serif text-sm" style="color:#e8d5a8">'+ini+'</span></div>'
         +'<div class="flex-1 min-w-0">'
         +'<div class="flex items-center gap-2 flex-wrap">'
-        +'<p class="font-medium text-sm" style="color:rgba(245,240,232,.85)">'+escHtml(w.name)+'</p>'
+        +'<p class="font-medium text-sm" style="color:rgba(245,240,232,.95)">'+escHtml(w.name)+'</p>'
         +'<span class="text-[8px] px-2 py-0.5 rounded-full font-medium tracking-wider border" style="'+badgeStyle+'">'+stLabel+' &bull; '+w.guests+' orang</span>'
         +'</div>'
-        +(w.message?'<p class="text-sm mt-1.5 font-light leading-relaxed" style="color:rgba(245,240,232,.5)">'+escHtml(w.message)+'</p>':'')
-        +'<p class="text-[10px] mt-2 tracking-wider" style="color:rgba(245,240,232,.2)">'+timeAgo(w.time)+'</p>'
+        +(w.message?'<p class="text-sm mt-1.5 font-light leading-relaxed" style="color:rgba(245,240,232,.8)">'+escHtml(w.message)+'</p>':'')
+        +'<p class="text-[10px] mt-2 tracking-wider" style="color:rgba(245,240,232,.5)">'+timeAgo(w.time)+'</p>'
         +'</div></div>';
 
     return card;
